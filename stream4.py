@@ -19,32 +19,73 @@ textile_trade_routes = {
     "Spain to the Netherlands": [(-5.9845, 37.3891, "Seville"), (4.9041, 52.3676, "Netherlands")]
 }
 
-# Define the dye trade routes
 dye_trade_routes = {
-    "Indigo": [(78.9629, 20.5937, "India"), (-9.1393, 38.7223, "Lisbon"), (4.4024, 51.2194, "Antwerp"),
-               (-0.1276, 51.5074, "London"), (-1.1743, 52.3555, "England"), (2.3522, 48.8566, "France"),
-               (12.4964, 41.9028, "Italy"), (4.9041, 52.3676, "Netherlands")],
-    
-    "Cochineal": [(96.7266, 17.0759, "Oaxaca"), (-96.1429, 19.1738, "Veracruz"), (-5.9845, 37.3891, "Seville"),
-                  (4.4024, 51.2194, "Antwerp"), (-0.1276, 51.5074, "London"), (104.1954, 35.8617, "China"),
-                  (35.2433, 38.9637, "Turkey"), (10.4515, 51.1657, "Europe")],
-    
-    "Logwood": [(-88.8661, 19.4326, "Yucatan"), (-96.1429, 19.1738, "Veracruz"), (-88.7667, 17.5088, "Belize"),
-                (-5.9845, 37.3891, "Seville"), (-0.1276, 51.5074, "London"), (-71.0589, 42.3601, "Boston"),
-                (-3.7038, 40.4168, "Spain"), (-1.1743, 52.3555, "England")],
-    
-    "Brazilwood": [(-38.5014, -12.9714, "Salvador"), (-9.1393, 38.7223, "Lisbon"), (12.3155, 45.4408, "Venice"),
-                   (4.4024, 51.2194, "Antwerp"), (-3.7038, 40.4168, "Spain"), (-8.2245, 39.3999, "Portugal"),
-                   (2.3522, 48.8566, "France"), (4.9041, 52.3676, "Netherlands")],
-    
-    "Annatto": [(89.7244, 21.1619, "Yucatan"), (-96.1429, 19.1738, "Veracruz"), (-73.9352, 18.4790, "Caribbean"),
-                (-5.9845, 37.3891, "Seville"), (-9.1393, 38.7223, "Lisbon"), (2.3522, 48.8566, "France"),
-                (-0.1276, 51.5074, "England")],
-    
-    "Safflower": [(104.1954, 35.8617, "China"), (116.4074, 39.9042, "Beijing"), (78.9629, 20.5937, "India"),
-                  (-9.1393, 38.7223, "Lisbon"), (4.4024, 51.2194, "Antwerp"), (12.3155, 45.4408, "Venice"),
-                  (-3.7038, 40.4168, "Spain"), (2.3522, 48.8566, "France"), (12.4964, 41.9028, "Italy")]
+    "Indigo": [
+        (78.9629, 20.5937, "India - Origin and Production"),  # Indigo originated and was produced in India
+        (-9.1393, 38.7223, "Lisbon - Portuguese Trade Hub"),  # Lisbon was a key trade hub for Europe
+        (4.4024, 51.2194, "Antwerp - European Distribution"),  # Antwerp served as a key distribution center
+        (-0.1276, 51.5074, "London - British Textile Industry"),  # Reached London for use in textile production
+        (2.3522, 48.8566, "France - French Textile Industry"),  # Used in France’s textile industry
+        (12.4964, 41.9028, "Italy - Italian Textile Industry"),  # Reached Italy for further use
+        (4.9041, 52.3676, "Netherlands - Dutch Textile Industry")  # Distributed in the Netherlands
+    ],
+
+    "Cochineal": [
+        (-96.7266, 17.0759, "Oaxaca, Mexico - Origin and Production"),  # Cochineal was produced in Oaxaca, Mexico
+        (-96.1429, 19.1738, "Veracruz - Export Hub"),  # Exported from Veracruz
+        (-5.9845, 37.3891, "Seville - Spanish Trade Hub"),  # Arrived in Seville as part of Spanish trade routes
+        (4.4024, 51.2194, "Antwerp - European Distribution"),  # Distributed through Antwerp to northern Europe
+        (-0.1276, 51.5074, "London - British Consumption"),  # Consumed in London for textile production
+        (104.1954, 35.8617, "China - Global Reach"),  # Reached China as a global commodity
+        (35.2433, 38.9637, "Turkey - Global Reach"),  # Also traded in Turkey
+        (10.4515, 51.1657, "Germany - European Consumption")  # Distributed widely in Europe
+    ],
+
+    "Logwood": [
+        (-88.8661, 19.4326, "Yucatan, Mexico - Origin and Production"),  # Logwood was harvested in Yucatan, Mexico
+        (-96.1429, 19.1738, "Veracruz - Export Hub"),  # Exported from Veracruz, Mexico
+        (-88.7667, 17.5088, "Belize - Collection Point"),  # Collected and exported via Belize
+        (-5.9845, 37.3891, "Seville - Spanish Trade Hub"),  # Arrived in Seville for distribution in Europe
+        (-0.1276, 51.5074, "London - British Textile Industry"),  # Used in British textile production
+        (-71.0589, 42.3601, "Boston - North American Market"),  # Exported to North America, especially Boston
+        (-3.7038, 40.4168, "Spain - Consumption and Redistribution"),  # Used and redistributed in Spain
+        (-1.1743, 52.3555, "England - Textile Production")  # Final use in England
+    ],
+
+    "Brazilwood": [
+        (-38.5014, -12.9714, "Salvador, Brazil - Origin and Production"),  # Brazilwood was harvested in Salvador, Brazil
+        (-9.1393, 38.7223, "Lisbon - Portuguese Trade Hub"),  # Exported to Lisbon as part of Portuguese trade
+        (12.3155, 45.4408, "Venice - Italian Dye Market"),  # Reached Venice for trade in Italy
+        (4.4024, 51.2194, "Antwerp - Northern European Distribution"),  # Distributed through Antwerp to Europe
+        (-3.7038, 40.4168, "Spain - Spanish Dye Industry"),  # Used in Spain’s dye production
+        (-8.2245, 39.3999, "Portugal - Domestic Use and Re-export"),  # Consumed in Portugal and re-exported
+        (2.3522, 48.8566, "France - French Dye Industry"),  # Consumed in France
+        (4.9041, 52.3676, "Netherlands - Dutch Textile Industry")  # Also distributed in the Netherlands
+    ],
+
+    "Annatto": [
+        (-89.7244, 21.1619, "Yucatan, Mexico - Origin and Production"),  # Annatto originated in Yucatan
+        (-96.1429, 19.1738, "Veracruz - Export Hub"),  # Exported via Veracruz
+        (-73.9352, 18.4790, "Caribbean - Production Region"),  # Harvested in the Caribbean
+        (-5.9845, 37.3891, "Seville - Spanish Trade Hub"),  # Reached Seville for European distribution
+        (-9.1393, 38.7223, "Lisbon - Portuguese Trade Hub"),  # Reached Lisbon as part of Portuguese trade
+        (2.3522, 48.8566, "France - French Textile Industry"),  # Used in the French textile industry
+        (-0.1276, 51.5074, "England - British Consumption")  # Exported to England for textile production
+    ],
+
+    "Safflower": [
+        (104.1954, 35.8617, "China - Origin and Production"),  # Safflower was produced in China
+        (116.4074, 39.9042, "Beijing - Export Hub"),  # Exported from Beijing
+        (78.9629, 20.5937, "India - Production Region"),  # Also produced in India
+        (-9.1393, 38.7223, "Lisbon - Portuguese Trade Hub"),  # Exported via Lisbon
+        (4.4024, 51.2194, "Antwerp - Distribution to Northern Europe"),  # Distributed via Antwerp
+        (12.3155, 45.4408, "Venice - Italian Market"),  # Reached Venice for Italian consumption
+        (-3.7038, 40.4168, "Spain - Spanish Textile Industry"),  # Used in Spain’s textile industry
+        (2.3522, 48.8566, "France - French Textile Industry"),  # Consumed in France
+        (12.4964, 41.9028, "Italy - Italian Textile Industry")  # Used in Italy
+    ]
 }
+
 
 # Combine both dye and textile trade routes
 combined_trade_routes = {**textile_trade_routes, **dye_trade_routes}
@@ -78,8 +119,8 @@ combined_route_info = {
     "India to England": 
     "India was one of the world’s largest producers of cotton and indigo, "
     "key raw materials for the British textile industry. The British East India Company monopolized these resources, "
-    "exporting them to England to fuel the British Industrial Revolution. This undermined the Indian textile industry, "
-    "devastating the local industry. India’s cotton and indigo exports were "
+    "exporting them to England to fuel the British Industrial Revolution. This "
+    "devastated the local industry. India’s cotton and indigo exports were "
     "essential in sustaining Britain’s dominance in global textile production and trade.",
 
     "India to Africa": 
@@ -117,7 +158,7 @@ combined_route_info = {
 
     "France to West Africa": 
     "In addition to British colonial practices, France also leveraged its textile industry to dominate its colonies, especially in West Africa. "
-    "French-produced textiles were exported to its African colonies, where they were used as a tool of economic control. By flooding these colonies "
+    "French-produced textiles were exported to its African colonies, where they were used as a tool of economic control; by flooding these colonies "
     "with European textiles, France weakened local industries and reinforced its dominance over African economies.",
 
     "India to China": 
@@ -212,7 +253,13 @@ def plot_trade_route(route_name):
         ))
 
     # Add markers for trade stops
-    for lon, lat, name in route_coords:
+    for idx, (lon, lat, name) in enumerate(route_coords):
+        # Highlight the first point
+        if idx == 0:
+            marker_props = dict(size=12, color='red', symbol='circle')  # Highlighted point
+        else:
+            marker_props = dict(size=8, color=color)
+        
         fig.add_trace(go.Scattergeo(
             lon=[lon],
             lat=[lat],
@@ -220,7 +267,7 @@ def plot_trade_route(route_name):
             text=name,
             textposition="bottom center",
             textfont=dict(color='black'),
-            marker=dict(size=8, color=color),
+            marker=marker_props,
             name=name
         ))
 
